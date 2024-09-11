@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="934.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.worksheet1.HelloController">
+   <children>
+      <ImageView fx:id="imgView" fitHeight="220.0" fitWidth="243.0" layoutX="40.0" layoutY="168.0" onMouseClicked="#choosePillSample" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="button" layoutX="23.0" layoutY="29.0" mnemonicParsing="false" onAction="#button" text="File" />
+
+      <Label fx:id="label" layoutX="379.0" layoutY="452.0" text="Label" />
+      <ImageView fx:id="view" fitHeight="220.0" fitWidth="243.0" layoutX="292.0" layoutY="168.0" onMouseClicked="#addPillButtonHandler" pickOnBounds="true" preserveRatio="true" />
+
+      <ImageView fx:id="view2" fitHeight="220.0" fitWidth="243.0" layoutX="565.0" layoutY="168.0" onMousePressed="#drawRectangles" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="41.0" layoutY="525.0" mnemonicParsing="false" onAction="#assignRandomColorToPill" text="random" />
+      <TextField fx:id="nameTextField" layoutX="528.0" layoutY="469.0" />
+      <TextField fx:id="dosageTextField" layoutX="528.0" layoutY="502.0" />
+      <TextField fx:id="descriptionTextField" layoutX="528.0" layoutY="538.0" />
+      <Label fx:id="pillNameLabel" layoutX="460.0" layoutY="473.0" text="Pill Name" />
+      <Label fx:id="pillDosageLabel" layoutX="460.0" layoutY="506.0" text="Dosage" />
+      <Label fx:id="pillDescriptionLabel" layoutX="460.0" layoutY="542.0" text="Description" />
+      <Button fx:id="AddPillButton" layoutX="706.0" layoutY="538.0" mnemonicParsing="false" onAction="#addPillButtonHandler" text="ADD" />
+      <Button layoutX="782.0" layoutY="538.0" mnemonicParsing="false" onAction="#savePillDetails" text="SAVE" />
+      <Slider layoutX="145.0" layoutY="483.0" />
+      <Slider layoutX="145.0" layoutY="510.0" />
+      <Slider layoutX="145.0" layoutY="544.0" />
+      <Label layoutX="322.0" layoutY="486.0" text="Brightness" />
+      <Label layoutX="322.0" layoutY="517.0" text="Hue" />
+      <Label layoutX="322.0" layoutY="546.0" prefHeight="17.0" prefWidth="28.0" text="Saturation" />
+      <Label fx:id="rectLabel" layoutX="551.0" layoutY="425.0" text="Label" />
+   </children>
+</AnchorPane>
